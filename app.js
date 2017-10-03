@@ -1173,6 +1173,7 @@ function addPersistentMenu(){
       ]
     },
     {
+      "locale":"pt_PT",	    
       "composer_input_disabled":false
     }
     ]
