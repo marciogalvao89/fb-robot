@@ -362,7 +362,6 @@ function receivedDeliveryConfirmation(event) {
 }
 
 
-
 /*
  * Postback Event
  *
@@ -1157,13 +1156,13 @@ function addPersistentMenu(){
       "composer_input_disabled":false,
       "call_to_actions":[
         {
-          "title":"Website",
+          "title":"Home",
           "type":"postback",
           "payload":"HOME"
         },
-       {
+        {
           "type":"web_url",
-          "title":"Aumento de Potencia",
+          "title":"Simulador de Potencia",
           "url":"http://rpmmotorsport.pt/aumento-de-potencia-2/",
           "webview_height_ratio":"full"
         },
@@ -1176,7 +1175,7 @@ function addPersistentMenu(){
       ]
     },
     {
-      "locale":"pt_PT",
+      "locale":"zh_CN",
       "composer_input_disabled":false
     }
     ]

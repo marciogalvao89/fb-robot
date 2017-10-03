@@ -1169,7 +1169,7 @@ function addPersistentMenu(){
         },
         {
           "type":"web_url",
-          "title":"Soluções FAP",
+          "title":"SoluÃ§Ãµes FAP",
           "url":"http://fapremove.pt",
           "webview_height_ratio":"full"
         }
