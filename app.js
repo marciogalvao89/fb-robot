@@ -362,6 +362,7 @@ function receivedDeliveryConfirmation(event) {
 }
 
 
+
 /*
  * Postback Event
  *
