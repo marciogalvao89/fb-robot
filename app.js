@@ -1166,9 +1166,9 @@ function addPersistentMenu(){
           "webview_height_ratio":"full"
         },
 	{
-            "type":"phone_number",
+            "type":"postback",
             "title": "Informações & Marcações",
-            "payload": "+351964131160"
+            "payload": "contactos"
         }
       ]
     },
