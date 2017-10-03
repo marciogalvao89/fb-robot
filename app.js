@@ -265,7 +265,7 @@ function handleReceivedMessage(event) {
         sendFileMessage(senderID);
         break;
 
-      case 'button':
+      case 'contactos':
         sendButtonMessage(senderID);
         break;
 
@@ -747,20 +747,18 @@ function sendButtonMessage(recipientId) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "This is test text",
+          text: "Informações & Marcações",
           buttons:[{
-            type: "web_url",
-            url: "https://www.oculus.com/en-us/rift/",
-            title: "Open Web URL"
-          }, {
-            type: "postback",
-            title: "Trigger Postback",
-            payload: "DEVELOPED_DEFINED_PAYLOAD"
-          }, {
             type: "phone_number",
-            title: "Call Phone Number",
-            payload: "+16505551234"
-          }]
+            title: "Márcio Galvão",
+            payload: "+351964131160"
+          },{
+            type: "phone_number",
+            title: "Pedro Lopes",
+            payload: "+351964131160"
+          }
+	  
+	  ]
         }
       }
     }
@@ -1175,7 +1173,6 @@ function addPersistentMenu(){
       ]
     },
     {
-      "locale":"zh_CN",
       "composer_input_disabled":false
     }
     ]
