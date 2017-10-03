@@ -1154,12 +1154,7 @@ function addPersistentMenu(){
     {
       "locale":"default",
       "composer_input_disabled":false,
-      "call_to_actions":[
-        {
-          "title":"Home",
-          "type":"postback",
-          "payload":"HOME"
-        },
+      "call_to_actions":[ 
         {
           "type":"web_url",
           "title":"Simulador de Potencia",
@@ -1171,6 +1166,11 @@ function addPersistentMenu(){
           "title":"Soluções FAP",
           "url":"http://fapremove.pt",
           "webview_height_ratio":"full"
+        },
+	{
+            type: "phone_number",
+            title: "Informações & Marcações",
+            payload: "+351964131160"
         }
       ]
     },
