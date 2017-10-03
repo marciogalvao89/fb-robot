@@ -1167,7 +1167,7 @@ function addPersistentMenu(){
         },
 	{
             "type":"postback",
-            "title": "Informações & Marcações",
+            "title": "Contactos",
             "payload": "contactos"
         }
       ]
