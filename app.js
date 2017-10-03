@@ -584,8 +584,8 @@ console.log("sendCustoMessage "+ messageText);
         sendJoke(recipientId);
         break        
 
-      case 'image':
-        sendRandomImage(recipientId);
+      case 'contactos':
+        sendButtonMessage(recipientId);
         break        
 
       case 'who':
@@ -637,7 +637,7 @@ console.log("sendJsonMessage " + keyword);
       sendSingleJsonMessage(recipientId,customRules[keyword.toUpperCase()]);
   }
   else  {
-      sendSingleJsonMessage(recipientId,"HOME.json");
+      //sendSingleJsonMessage(recipientId,"HOME.json");
   }
 }
 
@@ -1167,7 +1167,7 @@ function addPersistentMenu(){
         },
 	{
             "type":"postback",
-            "title": "Contactos",
+            "title": "Informações & Contactos",
             "payload": "contactos"
         }
       ]
