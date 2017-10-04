@@ -580,8 +580,8 @@ console.log("sendCustoMessage "+ messageText);
 
     switch (messageText.toLowerCase()) {
 
-	    case 'get_started_payload':
-        sendButtonMessage(recipientId);
+      case 'get_started_payload':
+        sendWelcomemessage(recipientId);
         break        
 
       case 'contactos':
@@ -766,6 +766,31 @@ function sendButtonMessage(recipientId) {
 
   callSendAPI(messageData);
 }
+
+
+function sendWelcomemessage(recipientId) {
+
+  var nameString = "Olá " + firstName + " " + lastName + ", Iremos responder assim que possível! Caso queira informações para Aumento de Potencia ou Solução FAP, pode consultar o nosso Website. Se pretender o orçamento, Indique-nos a Marca/modelo/ano/motorização do seu veiculo!";
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: nameString,
+      quick_replies: [
+        {
+          "content_type":"text",
+          "title":"Home",
+          "payload":"home"
+        }
+      ]
+    }
+  };
+
+  callSendAPI(messageData);
+}
+
+
 
 /*
  * Send a Structured Message (Generic Message type) using the Send API.
