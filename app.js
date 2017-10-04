@@ -580,8 +580,8 @@ console.log("sendCustoMessage "+ messageText);
 
     switch (messageText.toLowerCase()) {
 
-      case 'joke':
-        sendJoke(recipientId);
+      case 'GET_STARTED_PAYLOAD':
+        sendButtonMessage(recipientId);
         break        
 
       case 'contactos':
