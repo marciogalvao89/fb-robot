@@ -770,7 +770,7 @@ function sendButtonMessage(recipientId) {
 
 function sendWelcomemessage(recipientId) {
 
-  var nameString = "Ol· " + firstName + " " + lastName + ", Iremos responder assim que possÌvel! Caso queira informaÁıes para Aumento de Potencia ou SoluÁ„o FAP, pode consultar o nosso Website. Se pretender o orÁamento, Indique-nos a Marca/modelo/ano/motorizaÁ„o do seu veiculo!";
+  var nameString = "Ol√° " + firstName + " " + lastName + ", Iremos responder assim que poss√≠vel! Caso queira informa√ß√µes para Aumento de Potencia ou Solu√ß√£o FAP, pode consultar o nosso Website. Se pretender o or√ßamento, Indique-nos a Marca/modelo/ano/motoriza√ß√£o do seu veiculo!";
   var messageData = {
     recipient: {
       id: recipientId
@@ -779,10 +779,18 @@ function sendWelcomemessage(recipientId) {
       text: nameString,
       quick_replies: [
         {
-          "content_type":"text",
-          "title":"Home",
-          "payload":"home"
-        }
+         "type":"web_url",
+          "title":"Simulador de Potencia",
+          "url":"http://rpmmotorsport.pt/aumento-de-potencia-2/",
+          "webview_height_ratio":"full"
+        }, {
+	"type":"web_url",
+          "title":"Solu√ß√µes FAP",
+          "url":"http://fapremove.pt",
+          "webview_height_ratio":"full"
+
+
+	}
       ]
     }
   };
