@@ -776,22 +776,7 @@ function sendWelcomemessage(recipientId) {
       id: recipientId
     },
     message: {
-      text: nameString,
-      quick_replies: [
-        {
-         "type":"web_url",
-          "title":"Simulador de Potencia",
-          "url":"http://rpmmotorsport.pt/aumento-de-potencia-2/",
-          "webview_height_ratio":"full"
-        }, {
-	"type":"web_url",
-          "title":"Soluções FAP",
-          "url":"http://fapremove.pt",
-          "webview_height_ratio":"full"
-
-
-	}
-      ]
+      text: nameString 
     }
   };
 
