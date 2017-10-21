@@ -548,6 +548,7 @@ function sendSingleJsonMessage(recipientId,filename) {
 
 function sendEnteredMessage(recipientId,messageText) {
 
+/*
     if( previousMessageHash[recipientId] === 'send a message') {
          sendTextMessage(1073962542672604, messageText); // send a message to Matthew directly
     }
@@ -563,6 +564,7 @@ function sendEnteredMessage(recipientId,messageText) {
     else { 
          sendCustomMessage(recipientId,messageText);
    }
+*/
 }
 
 function sendCustomMessage(recipientId,messageText) {
