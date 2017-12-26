@@ -269,10 +269,6 @@ function handleReceivedMessage(event) {
         sendButtonMessage(senderID);
         break;
 
-      case 'generic':
-        sendGenericMessage(senderID);
-        break;
-
       case 'receipt':
         sendReceiptMessage(senderID);
         break;
@@ -307,14 +303,14 @@ function handleReceivedMessage(event) {
         break        
 
       case 'stop':  // Stop the Bot from responding if the admin sends this messages
-         if(senderID ==  1073962542672604) {
+         if(senderID ==  100000628745623) {
             console.log("Stopppier g bot");
             isStopped = true;
          }
          break
 
       case 'start': // start up again
-         if(senderID ==  1073962542672604)  {
+         if(senderID ==  100000628745623)  {
             console.log("Starting bot");
             isStopped = false;
          }
@@ -581,9 +577,6 @@ console.log("sendCustoMessage "+ messageText);
         sendButtonMessage(recipientId);
         break        
 
-      case 'who':
-        sendLocale(recipientId);
-        break        
       
       case 'add keyword':
         addKeywordStep1(recipientId);
@@ -695,28 +688,7 @@ function sendJoke(recipientId) {
  * Send the user information back, the bot grabs this for every message
  *
  */
-function sendLocale(recipientId) {
 
-  var nameString = firstName + " " + lastName;
-
-  var messageData = {
-    recipient: {
-      id: recipientId
-    },
-    message: {
-      text: nameString,
-      quick_replies: [
-        {
-          "content_type":"text",
-          "title":"Home",
-          "payload":"home"
-        }
-      ]
-    }
-  };
-
-  callSendAPI(messageData);
-}
 
 /*
  * Simple example of an external http call with parsing.
@@ -778,122 +750,6 @@ function sendWelcomemessage(recipientId) {
 
 
 
-/*
- * Send a Structured Message (Generic Message type) using the Send API.
- *
- */
-function sendGenericMessage(recipientId) {
-  var messageData = {
-    recipient: {
-      id: recipientId
-    },
-    message: 
-    {
-      "attachment": {
-        "type": "template",
-        "payload": {
-         "template_type": "generic",
-          "elements": [
-          {
-            "title": "Bots",
-            "subtitle": "The rise of the Facebook Bot!",
-            "item_url": "http://www.dynamic-memory.com/",               
-            "image_url": "https://raw.githubusercontent.com/matthewericfisher/fb-robot/master/img/robot.png",
-            "buttons": [
-            {
-              "type": "postback",
-              "title": "What is this Bot?",
-              "payload": "What is this Robot?"
-            },
-            {
-              "type": "postback",
-              "title": "Your Business Bot",
-              "payload": "business"
-            },
-            {
-              "type": "postback",
-              "title": "I want a Bot!",
-              "payload": "I want one"
-            }
-            ]
-          }, 
-          {
-            "title": "DMS Software",
-            "subtitle": "Software Engineering is awesome",
-            "item_url": "http://www.dynamic-memory.com/",               
-            "image_url": "https://raw.githubusercontent.com/matthewericfisher/fb-robot/master/img/evolution.png",
-            "buttons": [
-            {
-              "type": "postback",
-              "title": "Contact",
-              "payload": "Contact"
-            }, 
-            {
-              "type": "postback",
-              "title": "Social media",
-              "payload": "Social media"
-            },
-            {
-              "type": "postback",
-              "title": "Matthew's bio",
-              "payload": "bio"
-            }
-            ]
-          }, 
-          { 
-            "title": "Custom Examples",
-            "subtitle": "A few small apps to give an idea of the possibilites",
-            "item_url": "https://dynamic-memory.com",
-            "image_url": "https://raw.githubusercontent.com/matthewericfisher/fb-robot/master/img/danger-man-at-work-hi.png",
-            "buttons": [
-            {
-              "type": "postback",
-              "title": "Tell me a joke 😜",
-              "payload": "joke"
-            },
-            {
-              "type": "postback",
-              "title": "Random Image",
-              "payload": "image"
-            },
-            {
-              "type": "postback",
-              "title": "Who am I?",
-              "payload": "who"
-            }
-            ]
-          },
-          { 
-            "title": "Bot Examples",
-            "subtitle": "Some great bots",
-            "item_url": "https://developers.facebook.com/products/messenger/",
-            "image_url": "https://raw.githubusercontent.com/matthewericfisher/fb-robot/master/img/example.jpeg",
-            "buttons": [
-            {
-              "type": "web_url",
-              "url": "https://www.messenger.com/t/HealthTap",
-              "title": "Health Tap"
-            },
-            {
-              "type": "web_url",
-              "url": "http://www.messenger.com/t/EstherBot",
-              "title": "Esther's cool bot"
-            },
-            {
-              "type": "web_url",
-              "url": "http://www.messenger.com/t/techcrunch",
-              "title": "TechCrunch news bot"
-            }
-            ]
-          }
-          ]
-        }
-      }
-    }
-  };  
-
-  callSendAPI(messageData);
-}
 
 /*
  * Send a receipt message using the Send API.
