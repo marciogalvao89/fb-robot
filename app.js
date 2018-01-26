@@ -744,10 +744,6 @@ function sendButtonMessage(recipientId) {
             type: "phone_number",
             title: "Márcio Galvão",
             payload: "964131160"
-          },{
-            type: "phone_number",
-            title: "Pedro Lopes",
-            payload: "964131160"
           }
 	  
 	  ]
