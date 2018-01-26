@@ -589,7 +589,7 @@ console.log("sendCustoMessage "+ messageText);
         break        
 
       case 'who':
-        sendLocale(recipientId);
+        //sendLocale(recipientId);
         break        
       
       case 'add keyword':
@@ -685,11 +685,6 @@ function sendJoke(recipientId) {
           "content_type":"text",
           "title":"Another 😂",
           "payload":"joke"
-        },
-        {
-          "content_type":"text",
-          "title":"Home",
-          "payload":"home"
         }
       ]
     }
