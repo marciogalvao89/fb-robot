@@ -743,11 +743,11 @@ function sendButtonMessage(recipientId) {
           buttons:[{
             type: "phone_number",
             title: "Márcio Galvão",
-            payload: "+351964131160"
+            payload: "964131160"
           },{
             type: "phone_number",
             title: "Pedro Lopes",
-            payload: "+351964131160"
+            payload: "964131160"
           }
 	  
 	  ]
