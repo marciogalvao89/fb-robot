@@ -750,7 +750,7 @@ function sendButtonMessage(recipientId) {
           text: "Informações & Marcações",
           buttons:[{
             "type": "phone_number",
-            "title": "Marcio Galvao",
+            "title": "Marcio",
             "payload": "+351964131160"
           }
 	  
