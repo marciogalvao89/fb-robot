@@ -751,10 +751,8 @@ function sendButtonMessage(recipientId) {
           buttons:[{
             "type": "phone_number",
             "title": "Marcio",
-            "payload": "+351964131160"
-          }
-	  
-	  ]
+            "payload": "+351 964 131 160"
+          }]
         }
       }
     }

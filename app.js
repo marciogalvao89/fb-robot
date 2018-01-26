@@ -748,12 +748,12 @@ function sendButtonMessage(recipientId) {
         payload: {
           template_type: "button",
           text: "Informações & Marcações",
-          buttons:[{
+          buttons:[
+		{
             "type": "phone_number",
             "title": "Marcio",
-            "payload": "+351 964 131 160"
-          }
-	  
+            "payload": "964131160"
+          	}
 	  ]
         }
       }
