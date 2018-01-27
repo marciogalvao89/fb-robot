@@ -589,7 +589,7 @@ console.log("sendCustoMessage "+ messageText);
         break        
 
       case 'who':
-        sendLocale(recipientId);
+        //sendLocale(recipientId);
         break        
       
       case 'add keyword':
