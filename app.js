@@ -748,6 +748,11 @@ function sendButtonMessage(recipientId) {
             "type": "phone_number",
             "title": "Marcio",
             "payload": "+351964131160"
+          	},
+		 	{
+            "type": "phone_number",
+            "title": "Pedro Lopes",
+            "payload": "+351965612428"
           	}
 	  ]
         }
