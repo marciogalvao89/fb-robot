@@ -246,7 +246,7 @@ function handleReceivedMessage(event) {
     // the text we received.
     switch (messageText.toLowerCase()) {
       case 'image':
-        sendImageMessage(senderID, "http://messengerdemo.parseapp.com/img/rift.png");
+        sendImageMessage(senderID, "https://scontent.flis5-1.fna.fbcdn.net/v/t31.0-8/28337100_1838438802853727_887043945095278924_o.jpg?_nc_cat=0&oh=1824cd0e44373e9effbdda61eaf70595&oe=5B88364E");
         break;
 
       case 'gif':
@@ -581,6 +581,7 @@ console.log("sendCustoMessage "+ messageText);
     switch (messageText.toLowerCase()) {
 
       case 'get_started_payload':
+        sendImageMessage(senderID, "https://scontent.flis5-1.fna.fbcdn.net/v/t31.0-8/28337100_1838438802853727_887043945095278924_o.jpg?_nc_cat=0&oh=1824cd0e44373e9effbdda61eaf70595&oe=5B88364E");	
         sendWelcomemessage(recipientId);
         break        
 
@@ -764,8 +765,8 @@ function sendButtonMessage(recipientId) {
 }
 
 function sendWelcomemessage(recipientId) {
-
-  var nameString = "Olá " + firstName + " " + lastName + ", Iremos responder assim que possível! Caso queira informações para Aumento de Potencia ou Solução FAP, pode consultar o nosso Website. Se pretender o orçamento, Indique-nos a Marca/modelo/ano/motorização do seu veiculo!";
+	
+  var nameString = "Olá " + firstName + " " + lastName + ",\r Iremos responder assim que possível! Caso queira informações para Aumento de Potencia ou Solução FAP, pode consultar o nosso Website. Se pretender o orçamento, Indique-nos a Marca/modelo/ano/motorização do seu veiculo!";
   var messageData = {
     recipient: {
       id: recipientId
@@ -1167,7 +1168,7 @@ function addPersistentMenu(){
       "call_to_actions":[ 
         {
           "type":"web_url",
-          "title":"🏎 Simulador de Potencia",
+          "title":"🏎  Simulador de Potencia",
           "url":"http://rpmmotorsport.pt/aumento-de-potencia-2/",
           "webview_height_ratio":"full"
         },
