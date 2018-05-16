@@ -748,6 +748,11 @@ function sendButtonMessage(recipientId) {
             "type": "phone_number",
             "title": "Marcio",
             "payload": "+351964131160"
+          	},
+		 	{
+            "type": "phone_number",
+            "title": "Pedro Lopes",
+            "payload": "+351965612428"
           	}
 	  ]
         }
@@ -1051,7 +1056,7 @@ function sendTypingOff(recipientId) {
  */
 function callSendAPI(messageData) {
   request({
-    uri: 'https://graph.facebook.com/v2.6/me/messages',
+    uri: 'https://graph.facebook.com/v3/me/messages',
     qs: { access_token: PAGE_ACCESS_TOKEN },
     method: 'POST',
     json: messageData

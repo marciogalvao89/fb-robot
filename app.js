@@ -1056,7 +1056,7 @@ function sendTypingOff(recipientId) {
  */
 function callSendAPI(messageData) {
   request({
-    uri: 'https://graph.facebook.com/v2.6/me/messages',
+    uri: 'https://graph.facebook.com/v3/me/messages',
     qs: { access_token: PAGE_ACCESS_TOKEN },
     method: 'POST',
     json: messageData
@@ -1087,7 +1087,7 @@ function callSendAPI(messageData) {
 function callGetLocaleAPI(event, handleReceived) {
     var userID = event.sender.id;
     var http = require('https');
-    var path = '/v2.6/' + userID +'?fields=first_name,last_name,profile_pic,locale,timezone,gender&access_token=' + PAGE_ACCESS_TOKEN;
+    var path = '/v3/' + userID +'?fields=first_name,last_name,profile_pic,locale,timezone,gender&access_token=' + PAGE_ACCESS_TOKEN;
     var options = {
       host: 'graph.facebook.com',
       path: path
