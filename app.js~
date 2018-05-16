@@ -766,7 +766,7 @@ function sendButtonMessage(recipientId) {
 
 function sendWelcomemessage(recipientId) {
 	
-  var nameString = "Olá " + firstName + " " + lastName + ", Iremos responder assim que possível! Caso queira informações para Aumento de Potencia ou Solução FAP, pode consultar o nosso Website. Se pretender o orçamento, Indique-nos a Marca/modelo/ano/motorização do seu veiculo!";
+  var nameString = "Olá " + firstName + " " + lastName + ",\r Iremos responder assim que possível! Caso queira informações para Aumento de Potencia ou Solução FAP, pode consultar o nosso Website. Se pretender o orçamento, Indique-nos a Marca/modelo/ano/motorização do seu veiculo!";
   var messageData = {
     recipient: {
       id: recipientId
