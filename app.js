@@ -1167,19 +1167,19 @@ function addPersistentMenu(){
       "call_to_actions":[ 
         {
           "type":"web_url",
-          "title":"?? Simulador de Potencia",
+          "title":"🏎 Simulador de Potencia",
           "url":"http://rpmmotorsport.pt/aumento-de-potencia-2/",
           "webview_height_ratio":"full"
         },
         {
           "type":"web_url",
-          "title":"?? Soluções FAP",
+          "title":"🚑 Soluções FAP",
           "url":"http://fapremove.pt",
           "webview_height_ratio":"full"
         },
 	{
             "type":"postback",
-            "title": "?? Informações & Contactos",
+            "title": "📞 Informações & Contactos",
             "payload": "contactos"
         }
       ]
