@@ -623,7 +623,7 @@ console.log("sendCustoMessage "+ messageText);
 
 
       default:
-         sendJsonMessage(recipientId,messageText);
+         sendHolyWelcomemessage(recipientId);
 
     }
     previousMessageHash[recipientId] = messageText.toLowerCase();
@@ -779,7 +779,20 @@ function sendWelcomemessage(recipientId) {
   callSendAPI(messageData);
 }
 
+function sendHolyWelcomemessage(recipientId) {
+	
+  var nameString = "Olá " + firstName + " " + lastName + ",\r informamos que até setembro estamos condicionados por motivos de competição, iremos responder assim que possivel. Melhores Cumprimentos RPMmotorsport";
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: nameString 
+    }
+  };
 
+  callSendAPI(messageData);
+}
 /*
  * Send a Structured Message (Generic Message type) using the Send API.
  *
