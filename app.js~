@@ -623,7 +623,6 @@ console.log("sendCustoMessage "+ messageText);
 
 
       default:
-         //sendWelcomemessage(recipientId);
 
     }
     previousMessageHash[recipientId] = messageText.toLowerCase();

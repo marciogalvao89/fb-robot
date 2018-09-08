@@ -581,7 +581,7 @@ console.log("sendCustoMessage "+ messageText);
     switch (messageText.toLowerCase()) {
 
       case 'get_started_payload':
-        sendImageMessage(recipientId, "https://scontent.flis5-1.fna.fbcdn.net/v/t31.0-8/28337100_1838438802853727_887043945095278924_o.jpg?_nc_cat=0&oh=1824cd0e44373e9effbdda61eaf70595&oe=5B88364E");	
+        sendImageMessage(recipientId, "https://ecutune-db.com/thumbnail2.jpg");	
         sendWelcomemessage(recipientId);
         break        
 
