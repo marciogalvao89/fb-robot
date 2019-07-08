@@ -746,8 +746,8 @@ function sendButtonMessage(recipientId) {
           buttons:[
 		{
             "type": "phone_number",
-            "title": "Geral",
-            "payload": "+351265427946"
+            "title": "Pedro",
+            "payload": "+351965612428"
           	},
 		 	{
             "type": "phone_number",
