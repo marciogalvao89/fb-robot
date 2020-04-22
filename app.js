@@ -266,7 +266,7 @@ function handleReceivedMessage(event) {
         break;
 
       case 'button':
-        sendButtonMessage(senderID);
+        //sendButtonMessage(senderID);
         break;
 
       case 'generic':
@@ -586,7 +586,7 @@ console.log("sendCustoMessage "+ messageText);
         break        
 
       case 'contactos':
-        sendButtonMessage(recipientId);
+        //sendButtonMessage(recipientId);
         break        
 
       case 'who':

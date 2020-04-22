@@ -586,7 +586,7 @@ console.log("sendCustoMessage "+ messageText);
         break        
 
       case 'contactos':
-        sendButtonMessage(recipientId);
+        //sendButtonMessage(recipientId);
         break        
 
       case 'who':
@@ -1180,11 +1180,6 @@ function addPersistentMenu(){
           "title":"🚑 Soluções FAP",
           "url":"http://fapremove.pt",
           "webview_height_ratio":"full"
-        },
-	{
-            "type":"postback",
-            "title": "📞 Informações & Contactos",
-            "payload": "contactos"
         }
       ]
     },
